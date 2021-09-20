@@ -1,9 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  color: red;
+.navbar {
+  background-color: #ea5455;
+  margin-left: 0;
+  margin-right: 0;
 }
+.navbar .nav-link:hover {
+  color: #ea5455;
+}
+
+.landing-img {
+  background: url("https://images.pexels.com/photos/5947027/pexels-photo-5947027.jpeg?cs=srgb&dl=pexels-charlotte-may-5947027.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+
+.frontpage-text {
+  color: #2d4059;
+}
+.frontpage-text h1 {
+  margin-top: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
