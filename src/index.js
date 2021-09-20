@@ -136,8 +136,7 @@ function getRecipe(data) {
   directions.setAttribute("id", "instructions");
   directions.innerText = instructions;
   cocktail.appendChild(directions);
-<<<<<<< HEAD
-=======
+
   function findCocktail(ingredient) {
     fetch(
       "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredient
@@ -212,5 +211,4 @@ function getRecipe(data) {
     directions.innerHTML = `<span style="font-weight: bold;">Directions</span><br>${instructions}`;
     cocktail.appendChild(directions);
   }
->>>>>>> main
 }
