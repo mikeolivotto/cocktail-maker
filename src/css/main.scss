@@ -1,9 +1,33 @@
 @import 'partials/variables';
 
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: $primary-text;
 }
 
-h1 {
+.navbar {
+  background-color: $secondary-color;
+  margin-left: 0;
+  margin-right: 0;
+  .nav-link:hover {
+    color: $secondary-color;
+  }
+}
+
+.landing-img {
+  background: url("https://images.pexels.com/photos/5947027/pexels-photo-5947027.jpeg?cs=srgb&dl=pexels-charlotte-may-5947027.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+
+.frontpage-text {
   color: $primary-color;
+  h1 {
+    margin-top: 0;
+  }
 }
