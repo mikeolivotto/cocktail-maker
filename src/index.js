@@ -13,27 +13,27 @@ button.addEventListener("click", (event) => {
     event.preventDefault();
     let ingredients = document.getElementById("ingredients").value
     // console.log(ingredients)
-    return getCocktail(ingredients)
+    cocktail.innerHTML = ""
+    return findCocktail(ingredients)
 })
 
 
 // get cocktail based on single ingredient
-function getCocktail(ingredient) {
+function findCocktail(ingredient) {
     fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + ingredient)
     .then(res => res.json())
-    .then((data) => displayCocktail(data.drinks[0].idDrink))
+    .then((data) => getCocktail(data.drinks[0].idDrink))
     .catch(() => console.log("No cocktails include that ingredient"))
 
 }
 
-function displayCocktail(data){
+function getCocktail(data){
     fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i="+data)
         .then((res) => res.json())
-        .then((data) => getRecipe(data))
+        .then((data) => displayRecipe(data))
 }
 
-function getRecipe(data) {
-    // console.log(data.drinks[0].strDrink)
+function displayRecipe(data) {
     let drink = data.drinks[0]
 
     let name = drink.strDrink
@@ -67,20 +67,22 @@ function getRecipe(data) {
     // Create ul
     let list = document.createElement("ul")
     list.setAttribute("id", "ingredients")
+    list.innerHTML = `<span style="font-weight: bold;">Ingredients:</span><br>`
 
+    // create li for each measurement-ingredient pair
     var str = ""
-
     for (i = 0; i< ingredients.length; i++) {
         str += `<li>${measures[i]} ${ingredients[i]}</li>`
     }
-    console.log(str)
+
+    // add list items as innerHTML of the ul and add to DOM
     list.innerHTML = str
     cocktail.appendChild(list)
     
-
+    // Add directions to a p element and add to DOM
     let directions = document.createElement("p")
     directions.setAttribute("id", "instructions")
-    directions.innerText = instructions
+    directions.innerHTML = `<span style="font-weight: bold;">Directions</span><br>${instructions}`
     cocktail.appendChild(directions)
 
 }
