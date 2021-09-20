@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html {
   margin: 0;
@@ -6,8 +7,16 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+
+h1 {
+  color: 'green';
+}
+.card-custom {
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
 .navbar {
   background-color: #ea5455;
@@ -30,6 +39,52 @@ body {
 }
 .frontpage-text h1 {
   margin-top: 0;
+
+}
+/*# sourceMappingURL=main.css.map */
+
+.cocktial-info {
+  background: rgba(255, 105, 105, 0.156);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.card-custom .text-custom {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: scale(1);
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.custom-card .text-custom span {
+  color: rgb(255, 105, 105);
+  font-size: 1.4rem;
 }
 
-/*# sourceMappingURL=main.css.map */
+.card-custom:hover .text-custom {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.custom-btn {
+  border: none;
+  background: rgb(255, 105, 105);
+  color: #fff;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: all 0.3s linear;
+  width: 50%;
+  margin: 12px 0;
+}
+.custom-btn:active {
+  transform: scale(0.98);
+}
+.custom-btn:hover {
+  opacity: 0.8;
+}
