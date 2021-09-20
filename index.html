@@ -21,7 +21,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>Cocktail maker</h1>
+      <h1 class="text-center">Cocktail maker</h1>
+
+      <section>
+        <div class="container">
+          <form class="search-form">
+            <div class="row">
+              <div class="col-4">
+                <input
+                  type="search"
+                  placeholder="Search a cocktail.."
+                  autofocus="off"
+                  autocomplete="on"
+                  class="form-control"
+                  id="search-cocktail-name"
+                />
+              </div>
+              <div class="col-2">
+                <input class="btn btn-primary" id="cocktailNameButton" value="Search" type="submit">
+              </input>
+              </div>
+            </div>
+          </form>
+          <div class="row cocktail-info">
+            <h2 id="cocktail-name"></h2>
+            <h5 id="cocktail-category"></h5>
+            <p id="cocktail-instructions"></p>
+            <p id="cocktail-alcoholic"></p>
+            <p id="cocktail-ingredient"></p>
+          </div>
+        </div>
+      </section>
 
       <p>
         Input ingredients you have on hand and we'll find you the perfect
@@ -31,17 +61,18 @@
       <form>
         <label for="ingredients">What ingredient(s) do you have?:</label><br />
 
-        <textarea rows="3" cols="30" name="ingredients" id="ingredients"></textarea>
-        <input type="submit" value="RECOMMEND A COCKTAIL!" id="submit">
+        <textarea
+          rows="10"
+          cols="30"
+          name="ingredients"
+          id="ingredients"
+        ></textarea>
+        <input type="submit" value="RECOMMEND A COCKTAIL!" id="submit" />
       </form>
 
       <p>
         <a href="#" id="random">Get a random cocktail suggestion instead!</a>
     </p>
-
-    <div id="cocktail"></div>
-    </div>
-
 
     <script src="src/index.js"></script>
   </body>
