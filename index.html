@@ -20,13 +20,39 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <h1 class="text-center">Cocktail maker</h1>
-
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Cocktail Master</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    </div>
+    <div class="container-fluid landing-img align-items-center">
+    </div>
+    <div class="frontpage-text">
+        <h1 class="display-1 text-center">Cocktail master</h1>
+        <h4 class="display-4 text-center">All the basics for a perfect cocktail night</h4>
+    </div>
+    <div class="container align-items-center">
       <section>
         <div class="container">
           <form class="search-form">
-            <div class="row">
+            <div class="row text-center">
               <div class="col-4">
                 <input
                   type="search"
@@ -37,7 +63,7 @@
                   id="search-cocktail-name"
                 />
               </div>
-              <div class="col-2">
+              <div class="col-3">
                 <input class="btn btn-primary" id="cocktailNameButton" value="Search" type="submit">
               </input>
               </div>
@@ -73,7 +99,8 @@
       <p>
         <a href="#" id="random">Get a random cocktail suggestion instead!</a>
       </p>
-    </div>
+    
+</div>
 
     <script src="src/index.js"></script>
   </body>

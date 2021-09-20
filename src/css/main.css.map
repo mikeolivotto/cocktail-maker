@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,mEAAI;ADEZ,AAAA,IAAI,CAAC;EACH,WAAW,ECFE,QAAQ,EAAE,UAAU;CDGlC;;AAED,AAAA,EAAE,CAAC;EACD,KAAK,ECLS,GAAG;CDMlB",
-    "sources": [
-        "main.scss",
-        "partials/_variables.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sourceRoot":"","sources":["partials/_variables.scss","main.scss"],"names":[],"mappings":"AAAQ;ACER;EACE;EACA;EACA;;;AAEF;EACE,aDPa;;;ACUf;EACE,kBDTgB;ECUhB;EACA;;AACA;EACE,ODbc;;;ACiBlB;EACE;EACA;EACA;EACA;;;AAGF;EACE,OD1Bc;;AC2Bd;EACE","file":"main.css"}
