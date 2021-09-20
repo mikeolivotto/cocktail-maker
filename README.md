@@ -19,3 +19,7 @@ Mike
 Sam
 
 - Added some new features
+
+Malan
+
+- adding to readme as well
