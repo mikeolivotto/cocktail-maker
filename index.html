@@ -22,26 +22,59 @@
   <body>
     <div class="container">
       <h1>Cocktail maker</h1>
-
       <p>
         Input ingredients you have on hand and we'll find you the perfect
         cocktail!
       </p>
-
-      <form>
-        <label for="ingredients">What ingredient(s) do you have?:</label><br />
-
-        <textarea rows="10" cols="30" name="ingredients" id="ingredients"></textarea>
-        <input type="submit" value="RECOMMEND A COCKTAIL!" id="submit">
-      </form>
+      <div class="row">
+        <div class="col">
+          <form>
+            <label for="ingredients">What ingredient(s) do you have?:</label
+            ><br />
+            <textarea
+              rows="10"
+              cols="30"
+              name="ingredients"
+              id="ingredients"
+            ></textarea>
+            <br />
+            <input
+              type="submit"
+              value="RECOMMEND A COCKTAIL!"
+              id="submit"
+              class="custom-btn"
+            />
+          </form>
+        </div>
+        <div class="col">
+          <div id="cocktail"></div>
+        </div>
+      </div>
 
       <p>
         <a href="#" id="random">Get a random cocktail suggestion instead!</a>
       </p>
     </div>
-
-    <div id="cocktail"></div>
-
+    <!-- adding the grid system and will apend the content with DOM through JS -->
+    <div class="container">
+      <h2>Serch by Letter</h2>
+      <div class="error" id="error"></div>
+      <div class="row">
+        <div class="col">
+          <button class="custom-btn" id="link">A</button>
+        </div>
+        <div class="col">
+          <button class="custom-btn" id="link">B</button>
+        </div>
+        <div class="col">
+          <button class="custom-btn" id="link">C</button>
+        </div>
+        <div class="col">
+          <button class="custom-btn" id="link">D</button>
+        </div>
+      </div>
+      <div class="row" id="card"></div>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
