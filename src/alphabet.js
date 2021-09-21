@@ -9,31 +9,13 @@ function listOfDrink(letter) {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=' + letter)
       .then((response) => response.json())
       .then((data) => getListOfDink(data, i))
-      .catch(
-        () => (error.innerText = 'Something went wrong, Please try again🙂')
-      );
+      .catch(() => console.log('Something went wrong, Please try again🙂'));
   }
 }
-
 links.forEach((link) => {
   link.addEventListener('click', () => {
     card.innerHTML = '';
-    switch (link.textContent) {
-      case 'A':
-        listOfDrink('a');
-        break;
-      case 'B':
-        listOfDrink('b');
-        break;
-      case 'C':
-        listOfDrink('c');
-        break;
-      case 'D':
-        listOfDrink('d');
-        break;
-      default:
-        break;
-    }
+    listOfDrink(link.textContent);
   });
 });
 // get all the drink with the first letter
