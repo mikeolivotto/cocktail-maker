@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>🍹 Cocktail Master</title>
-    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,22 +20,18 @@
     ></script>
   </head>
   <body>
-
-    <div class="container">
-      <h1>Cocktail maker</h1>
-
     <div class="container-fluid">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light fixed-top">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Cocktail Master</a>
+                  <a class="navbar-brand" href="../../index.html">Cocktail Master</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="src/pages/search-cockail.html">Search cocktails</a>
+                        <a class="nav-link active" aria-current="page" href="search-cockail.html">Search cocktails</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -46,14 +42,12 @@
               </nav>
         </header>
     </div>
-    <div class="container-fluid landing-img align-items-center">
+    <div class="container-fluid landing-img-search-cocktail">
     </div>
-    <div class="frontpage-text">
-        <h1 class="display-1 text-center">Cocktail master</h1>
-        <h4 class="display-4 text-center">All the basics for a perfect cocktail night</h4>
-    </div>
-    <div class="container align-items-center">
-      <section>
+        <section>
+        <div class="search-cocktail-box">
+          <h1 class="text-center" id="search-cocktail-text">Search cocktails</h1>
+        </div>
         <div class="container">
           <form class="search-form">
             <div class="row text-center">
@@ -80,68 +74,8 @@
             <p id="cocktail-alcoholic"></p>
             <p id="cocktail-ingredient"></p>
           </div>
-        </div>
       </section>
-      <p>
-        Input ingredients you have on hand and we'll find you the perfect
-        cocktail!
-      </p>
-
-      <div class="row">
-        <div class="col">
-          <form>
-            <label for="ingredients">What ingredient(s) do you have?:</label
-            ><br />
-            <textarea
-              rows="3"
-              cols="30"
-              name="ingredients"
-              id="ingredients"
-            ></textarea>
-            <br />
-            <input
-              type="submit"
-              value="RECOMMEND A COCKTAIL!"
-              id="submit"
-              class="custom-btn"
-            />
-          </form>
-        </div>
-        <div class="col">
-          <div id="cocktail"></div>
-        </div>
-      </div>
-
-
-      <p>
-        <a href="#" id="random">Get a random cocktail suggestion instead!</a>
-      </p>
-
     </div>
-    <!-- adding the grid system and will apend the content with DOM through JS -->
-    <div class="container">
-      <h2>Serch by Letter</h2>
-      <div class="error" id="error"></div>
-      <div class="row">
-        <div class="col">
-          <button class="custom-btn" id="link">A</button>
-        </div>
-        <div class="col">
-          <button class="custom-btn" id="link">B</button>
-        </div>
-        <div class="col">
-          <button class="custom-btn" id="link">C</button>
-        </div>
-        <div class="col">
-          <button class="custom-btn" id="link">D</button>
-        </div>
-      </div>
-      <div class="row" id="card"></div>
-    </div>
-</div>
-    <!-- <script src="src/index.js"></script> -->
-    <script src="src/search.js"></script>
-    <script src="src/alphabet.js"></script>
-    <script src="src/ingredient.js"></script>
+    <script src="../search.js"></script>
   </body>
 </html>
