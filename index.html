@@ -35,10 +35,10 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="src/pages/search-cockail.html">Search cocktails</a>
+                        <a class="nav-link active" aria-current="page" href="src/pages/search-cocktail.html">Search cocktails</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link active" aria-current="page" href="src/pages/recommend.html">Get a recommendation</a>
                       </li>
                     </ul>
                   </div>
@@ -121,6 +121,26 @@
         <a href="#" id="random">Get a random cocktail suggestion instead!</a>
       </p>
 
+    </div>
+    <!-- adding the grid system and will apend the content with DOM through JS -->
+    <div class="container">
+      <h2>Search by Letter</h2>
+      <div class="error" id="error"></div>
+      <div class="row">
+        <div class="col">
+          <button class="custom-btn" id="link">A</button>
+        </div>
+        <div class="col">
+          <button class="custom-btn" id="link">B</button>
+        </div>
+        <div class="col">
+          <button class="custom-btn" id="link">C</button>
+        </div>
+        <div class="col">
+          <button class="custom-btn" id="link">D</button>
+        </div>
+      </div>
+      <div class="row" id="card"></div>
     </div>
 </div>
     <!-- <script src="src/index.js"></script> -->

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>🍹 Cocktail Master</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../../index.html">Cocktail Master</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="search-cockail.html">Search cocktails</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    </div>
+    <div class="container-fluid landing-img-search-cocktail">
+    </div>
+        <section>
+        <div class="search-cocktail-box">
+          <h1 class="text-center" id="search-cocktail-text">Get a recommendation</h1>
+        </div>
+
+
+        <div class="container">
+          <p style="text-align: center;">
+            Not sure what you want? Input an ingredient you have on hand and we'll find you the perfect
+            cocktail!
+          </p>
+          <form class="search-form">
+            <div class="row">
+                <div class="col-2"></div>
+              <div class="col-6">
+                <input
+                type="text"
+                placeholder="Enter an ingredient"
+                autofocus="off"
+                autocomplete="on"
+                class="form-control"
+                id="ingredients"
+                />
+              </div>
+              <div class="col-2">
+                <input
+                type="submit"
+                value="Recommend a cocktail"
+                id="submit"
+                class="btn btn-primary"
+              />
+              </div>
+              <div class="col-2"></div>
+            </div>
+          </form>
+          <div id="cocktail"></div>
+
+      </section>
+    </div>
+    <script src="../ingredient.js"></script>
+  </body>
+</html>
