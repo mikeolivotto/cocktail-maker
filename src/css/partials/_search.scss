@@ -1,0 +1,16 @@
+.landing-img-search-cocktail {
+  background: url("https://images.pexels.com/photos/4871113/pexels-photo-4871113.jpeg?cs=srgb&dl=pexels-roman-odintsov-4871113.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+
+.search-cocktail-box {
+  background-color: $secondary-color;
+}
+#search-cocktail-text {
+  color: $primary-color;
+  font-size: 3.5rem;
+  color: $third-color;
+  padding: 15px 0px;
+}
