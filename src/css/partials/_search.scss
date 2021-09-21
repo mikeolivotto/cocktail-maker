@@ -1,0 +1,45 @@
+.landing-img-search-cocktail {
+  background: url("https://images.pexels.com/photos/4871113/pexels-photo-4871113.jpeg?cs=srgb&dl=pexels-roman-odintsov-4871113.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+
+.search-cocktail-box {
+  background-color: $secondary-color;
+}
+#search-cocktail-text {
+  color: $primary-color;
+  font-size: 3.5rem;
+  color: $third-color;
+  padding: 15px 0px;
+}
+
+form {
+  margin-top: 40px;
+}
+
+.cocktail-info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#cocktail-name {
+  color: $primary-color;
+}
+
+#cocktail-category {
+  color: $primary-color;
+}
+
+#cocktail-instructions {
+  color: $primary-color;
+}
+
+#cocktail-alcoholic {
+  color: $primary-color;
+}
+
+#cocktail-ingredient {
+  color: $primary-color;
+}
