@@ -2,7 +2,7 @@
 
 **Group:** 
 
-Mike Olivotto | Malan Christiansen | Saman 
+Mike Olivotto | Malan Christiansen | Saman Fayazi
 
 ## Objective
 
