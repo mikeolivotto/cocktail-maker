@@ -17,6 +17,35 @@
   padding: 15px 0px;
 }
 
+form {
+  margin-top: 40px;
+}
+
+.cocktail-info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#cocktail-name {
+  color: #2d4059;
+}
+
+#cocktail-category {
+  color: #2d4059;
+}
+
+#cocktail-instructions {
+  color: #2d4059;
+}
+
+#cocktail-alcoholic {
+  color: #2d4059;
+}
+
+#cocktail-ingredient {
+  color: #2d4059;
+}
+
 html {
   margin: 0;
   padding: 0;

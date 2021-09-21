@@ -14,3 +14,32 @@
   color: $third-color;
   padding: 15px 0px;
 }
+
+form {
+  margin-top: 40px;
+}
+
+.cocktail-info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#cocktail-name {
+  color: $primary-color;
+}
+
+#cocktail-category {
+  color: $primary-color;
+}
+
+#cocktail-instructions {
+  color: $primary-color;
+}
+
+#cocktail-alcoholic {
+  color: $primary-color;
+}
+
+#cocktail-ingredient {
+  color: $primary-color;
+}
