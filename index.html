@@ -83,34 +83,38 @@
         </div>
       </section>
       <p>
-        Input ingredients you have on hand and we'll find you the perfect
+        Not sure what you want? Input an ingredient you have on hand and we'll find you the perfect
         cocktail!
       </p>
 
-      <div class="row">
-        <div class="col">
-          <form>
-            <label for="ingredients">What ingredient(s) do you have?:</label
-            ><br />
-            <textarea
-              rows="3"
-              cols="30"
-              name="ingredients"
-              id="ingredients"
-            ></textarea>
-            <br />
-            <input
-              type="submit"
-              value="RECOMMEND A COCKTAIL!"
-              id="submit"
-              class="custom-btn"
-            />
+      <div>
+          <form class="search-form">
+            <div class="row text-center">
+                <div class="col-4">
+                    <input
+                    type="text"
+                    placeholder="Enter an ingredient"
+                    autofocus="off"
+                    autocomplete="on"
+                    class="form-control"
+                    id="ingredients"
+                    />
+                </div>
+                
+                <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Recommend a cocktail"
+                      id="submit"
+                      class="btn btn-primary"
+                    />
+                </div>
+            </div>
           </form>
-        </div>
-        <div class="col">
+
           <div id="cocktail"></div>
+
         </div>
-      </div>
 
 
       <p>
@@ -120,7 +124,7 @@
     </div>
     <!-- adding the grid system and will apend the content with DOM through JS -->
     <div class="container">
-      <h2>Serch by Letter</h2>
+      <h2>Search by Letter</h2>
       <div class="error" id="error"></div>
       <div class="row">
         <div class="col">
