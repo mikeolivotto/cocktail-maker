@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .landing-img-search-cocktail {
-  background: url("https://images.pexels.com/photos/4871113/pexels-photo-4871113.jpeg?cs=srgb&dl=pexels-roman-odintsov-4871113.jpg&fm=jpg");
+  background: url('https://images.pexels.com/photos/4871113/pexels-photo-4871113.jpeg?cs=srgb&dl=pexels-roman-odintsov-4871113.jpg&fm=jpg');
   background-size: cover;
   background-position: center;
   height: 65vh;
@@ -53,19 +53,11 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-}
-.navbar {
-  background-color: #ea5455;
-  margin-left: 0;
-  margin-right: 0;
-}
-.navbar .nav-link:hover {
-  color: #ea5455;
+  font-family: 'Roboto', sans-serif;
 }
 
 .landing-img {
-  background: url("https://images.pexels.com/photos/5947027/pexels-photo-5947027.jpeg?cs=srgb&dl=pexels-charlotte-may-5947027.jpg&fm=jpg");
+  background: url('https://images.pexels.com/photos/5947027/pexels-photo-5947027.jpeg?cs=srgb&dl=pexels-charlotte-may-5947027.jpg&fm=jpg');
   background-size: cover;
   background-position: center;
   height: 65vh;
@@ -81,6 +73,19 @@ body {
 /*# sourceMappingURL=main.css.map */
 
 /* Sam's Styling */
+.custom-navbar {
+  background-color: #ea5455;
+}
+.custom-nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: all 0.3s linear;
+}
+.custom-nav-link:hover {
+  color: #e7b2b2;
+}
+
 .main-hero {
   height: 70vh;
   background-image: linear-gradient(rgba(79, 38, 38, 0.8), rgba(0, 0, 0, 0.7)),
@@ -172,4 +177,3 @@ body {
 }
 
 /* End of Sam's styling */
-
