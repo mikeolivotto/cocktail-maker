@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/main.css" />
 
-    <title>🍹 Cocktail Master</title>
-    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,134 +17,136 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <title>Main Page</title>
   </head>
   <body>
-
-    <div class="container">
-      <h1>Cocktail maker</h1>
-
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-light fixed-top">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Cocktail Master</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="src/pages/search-cocktail.html">Search cocktails</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="src/pages/recommend.html">Get a recommendation</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
-    </div>
-    <div class="container-fluid landing-img align-items-center">
-    </div>
-    <div class="frontpage-text">
-        <h1 class="display-1 text-center">Cocktail master</h1>
-        <h4 class="display-4 text-center">All the basics for a perfect cocktail night</h4>
-    </div>
-    <div class="container align-items-center">
-      <section>
-        <div class="container">
-          <form class="search-form">
-            <div class="row text-center">
-              <div class="col-4">
-                <input
-                  type="search"
-                  placeholder="Search a cocktail.."
-                  autofocus="off"
-                  autocomplete="on"
-                  class="form-control"
-                  id="search-cocktail-name"
-                />
-              </div>
-              <div class="col-3">
-                <input class="btn btn-primary" id="cocktailNameButton" value="Search" type="submit">
-              </input>
-              </div>
+    <section class="main-section">
+      <header>
+        <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand custom-nav-link" href="index.html"
+              >Cocktail Master</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="custom-nav-link"
+                    aria-current="page"
+                    href="./src/pages/search-cocktail.html"
+                    >Search cocktails</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="custom-nav-link" href="./src/pages/recommend.html"
+                    >Search by Ingredient</a
+                  >
+                </li>
+              </ul>
             </div>
-          </form>
-          <div class="row cocktail-info">
-            <h2 id="cocktail-name"></h2>
-            <h5 id="cocktail-category"></h5>
-            <p id="cocktail-instructions"></p>
-            <p id="cocktail-alcoholic"></p>
-            <p id="cocktail-ingredient"></p>
+          </div>
+        </nav>
+      </header>
+      <div class="main-hero">
+        <h1 class="custom-title">Welcome to Cocktail Master</h1>
+      </div>
+      <!-- adding the grid system and apend the content with DOM through JS -->
+      <div class="container mt-5">
+        <h2 class="click-title">Click to get drink by first letter</h2>
+        <div class="row my-5">
+          <div class="col">
+            <button class="custom-btn" id="link">A</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">B</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">C</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">D</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">E</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">F</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">G</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">H</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">I</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">J</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">K</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">L</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">M</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">N</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">O</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">P</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">Q</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">R</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">S</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">T</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">U</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">V</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">W</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">X</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">Y</button>
+          </div>
+          <div class="col">
+            <button class="custom-btn" id="link">Z</button>
           </div>
         </div>
-      </section>
-      <p>
-        Not sure what you want? Input an ingredient you have on hand and we'll find you the perfect
-        cocktail!
-      </p>
-
-      <div>
-          <form class="search-form">
-            <div class="row text-center">
-                <div class="col-4">
-                    <input
-                    type="text"
-                    placeholder="Enter an ingredient"
-                    autofocus="off"
-                    autocomplete="on"
-                    class="form-control"
-                    id="ingredients"
-                    />
-                </div>
-                
-                <div class="col-3">
-                    <input
-                      type="submit"
-                      value="Recommend a cocktail"
-                      id="submit"
-                      class="btn btn-primary"
-                    />
-                </div>
-            </div>
-          </form>
-
-          <div id="cocktail"></div>
-
-        </div>
-
-
-      <p>
-        <a href="#" id="random">Get a random cocktail suggestion instead!</a>
-      </p>
-
-    </div>
-    <!-- adding the grid system and will apend the content with DOM through JS -->
-    <div class="container">
-      <h2>Search by Letter</h2>
-      <div class="error" id="error"></div>
-      <div class="row">
-        <div class="col">
-          <button class="custom-btn" id="link">A</button>
-        </div>
-        <div class="col">
-          <button class="custom-btn" id="link">B</button>
-        </div>
-        <div class="col">
-          <button class="custom-btn" id="link">C</button>
-        </div>
-        <div class="col">
-          <button class="custom-btn" id="link">D</button>
-        </div>
+        <div class="row" id="card"></div>
       </div>
-      <div class="row" id="card"></div>
-    </div>
-</div>
-    <!-- <script src="src/index.js"></script> -->
-    <script src="src/search.js"></script>
-    <script src="src/alphabet.js"></script>
-    <script src="src/ingredient.js"></script>
+    </section>
+    <script src="./src/alphabet.js"></script>
   </body>
 </html>
