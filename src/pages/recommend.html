@@ -24,7 +24,7 @@
         <header>
             <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
                 <div class="container-fluid">
-                  <a class="navbar-brand custom-nav-link" href="../../main.html">Cocktail Master</a>
+                  <a class="navbar-brand custom-nav-link" href="../../index.html">Cocktail Master</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -34,7 +34,7 @@
                         <a class="custom-nav-link" aria-current="page" href="./search-cocktail.html">Search cocktails</a>
                       </li>
                       <li class="nav-item">
-                        <a class="custom-nav-link" aria-current="page" href="./recommend.html">Search Bt Ingredient</a>
+                        <a class="custom-nav-link" aria-current="page" href="./recommend.html">Search by Ingredient</a>
                       </li>
                     </ul>
                   </div>
@@ -52,23 +52,24 @@
 
         <div class="container">
           <p style="text-align: center;">
-            Not sure what you want? Input an ingredient you have on hand and we'll find you the perfect
+            Not sure what you want?<br>
+            Input an ingredient you have on hand and we'll find you the perfect
             cocktail!
           </p>
           <form class="search-form">
             <div class="row">
-                <div class="col-2"></div>
-              <div class="col-6">
-                <input
-                type="text"
-                placeholder="Enter an ingredient"
-                autofocus="off"
-                autocomplete="on"
-                class="form-control"
-                id="ingredients"
-                />
-              </div>
-              <div class="col-2">
+                <div class="col-3"></div>
+                  <div class="col-4">
+                    <input
+                    type="text"
+                    placeholder="eg. Vodka"
+                    autofocus="off"
+                    autocomplete="on"
+                    class="form-control"
+                    id="ingredients"
+                    />
+                  </div>
+              <div class="col-3">
                 <input
                 type="submit"
                 value="Recommend a cocktail"
@@ -81,6 +82,7 @@
           </form>
           <div id="cocktail"></div>
 
+          <br><br><br><br><br><br><br><br><br><br>
       </section>
     </div>
     <script src="../ingredient.js"></script>
