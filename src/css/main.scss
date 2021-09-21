@@ -1,5 +1,5 @@
-@import "partials/variables";
-@import "partials/search";
+@import 'partials/variables';
+@import 'partials/search';
 
 html {
   margin: 0;
@@ -20,7 +20,7 @@ body {
 }
 
 .landing-img {
-  background: url("https://images.pexels.com/photos/5947027/pexels-photo-5947027.jpeg?cs=srgb&dl=pexels-charlotte-may-5947027.jpg&fm=jpg");
+  background: url('https://images.pexels.com/photos/5947027/pexels-photo-5947027.jpeg?cs=srgb&dl=pexels-charlotte-may-5947027.jpg&fm=jpg');
   background-size: cover;
   background-position: center;
   height: 65vh;

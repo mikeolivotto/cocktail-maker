@@ -6,9 +6,9 @@
   height: 65vh;
 }
 
-.search-cocktail-box {
-  background-color: #ea5455;
-}
+/* .search-cocktail-box {
+  background-color: #003a47;
+} */
 
 #search-cocktail-text {
   color: #2d4059;
@@ -73,15 +73,17 @@ body {
 /*# sourceMappingURL=main.css.map */
 
 /* Sam's Styling */
-.custom-navbar {
-  background-color: #ea5455;
-}
+
 .custom-nav-link {
   color: #fff;
   text-decoration: none;
   margin-left: 2rem;
   transition: all 0.3s linear;
 }
+.custom-navbar {
+  background-color: #003a47;
+}
+
 .custom-nav-link:hover {
   color: #e7b2b2;
 }
