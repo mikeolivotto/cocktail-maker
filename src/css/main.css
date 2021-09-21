@@ -55,7 +55,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
-
 .navbar {
   background-color: #ea5455;
   margin-left: 0;
@@ -80,3 +79,97 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* Sam's Styling */
+.main-hero {
+  height: 70vh;
+  background-image: linear-gradient(rgba(79, 38, 38, 0.8), rgba(0, 0, 0, 0.7)),
+    url('../image/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+.custom-title {
+  padding: 2rem;
+  font-weight: bold;
+  animation: slide 1.4s linear;
+  transition: all 0.5s linear;
+}
+@keyframes slide {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(100px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.click-title {
+  margin: 1rem auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.cocktial-info {
+  background: rgba(255, 105, 105, 0.156);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.card-custom {
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.card-custom .text-custom {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: scale(1);
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.card-custom .text-custom span {
+  color: rgb(255, 105, 105);
+  font-size: 1.4rem;
+}
+
+.card-custom:hover .text-custom {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.custom-btn {
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 105, 105);
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  transition: all 0.3s linear;
+  width: 50%;
+  margin: 12px 0;
+  cursor: pointer;
+}
+.custom-btn:active {
+  transform: scale(0.98);
+}
+.custom-btn:hover {
+  opacity: 0.8;
+}
+
+/* End of Sam's styling */
+

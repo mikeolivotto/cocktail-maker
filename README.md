@@ -18,7 +18,7 @@ Mike
 
 Sam
 
-- Added some new features
+- Added a lists of letter to query drinks by the first letter
 
 Malan
 
